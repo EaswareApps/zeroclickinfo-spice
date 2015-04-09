@@ -19,7 +19,7 @@
                 sourceUrl: 'http://olam.in/Dictionary/?action=en_ml&q=' + api_result[0].word
             },normalize: function(item) {
 					var meanings = [];
-					var limit = 5;
+					    limit = 5;
 					//limiting meanings to 5 and remove last entry in defenitions (link to website)
 					var display = (item.definitions.length-1 > limit)?limit:item.definitions.length-1;
 					for(var i=0;i<display;i++){
@@ -28,7 +28,7 @@
 					
 					return{
 							title : item.word,
-							meanings : meanings,
+							meanings : meanings
 					};
 			},		
             templates: {
